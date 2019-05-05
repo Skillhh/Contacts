@@ -12,10 +12,14 @@
    <!-- Main Section -->
     <div class="container">
       <h3 class="heading font-weight-light">Here are your contacts</h3>
-      {{status}}
       <hr />
     </div>
     <div class="container main-part">
+    {% if contacts %}
+
+    {% else %}
+      No contacs
+    {% endif %}
       <!-- Card for details -->
       <div class="card my-2 mx-2 boy-card">
         <img src="{% static './images/boy.png' %}" class="img-fluid" />
